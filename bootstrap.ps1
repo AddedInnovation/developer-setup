@@ -35,7 +35,7 @@ if ($SourceCodeFolder)
     Set-EnvironmentVariable -Key "BoxStarter:SourceCodeFolder" -Value $SourceCodeFolder
 }
 
-$installScript = 'https://raw.githubusercontent.com/AddedInnovation/developer-setup/master/box.ps1'
+$installScript = 'https://raw.githubusercontent.com/AddedInnovation/developer-setup/master/windows.ps1'
 $webLauncherUrl = "http://boxstarter.org/package/nr/url?$installScript"
 $edgeVersion = Get-AppxPackage -Name Microsoft.MicrosoftEdge
 
