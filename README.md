@@ -1,2 +1,2 @@
-# developer-setup
+# Windows Developer Automation
 Development environment set-up scripts.
