@@ -1,22 +1,13 @@
 <#
 
-#OPTIONAL
+#OPTIONAL			
+    	[Environment]::SetEnvironmentVariable("BoxStarter:DataDrive", "C", "Machine") # for reboots
+	[Environment]::SetEnvironmentVariable("BoxStarter:DataDrive", "C", "Process") # for right now
 
-	** Windows 7 **
-	Should upgrade to WMF 5 first for reduced errors
-	https://www.microsoft.com/en-us/download/details.aspx?id=50395
-
-	# If Dev Machine	
-    	[Environment]::SetEnvironmentVariable("BoxStarter:DataDrive", "D", "Machine") # for reboots
-	[Environment]::SetEnvironmentVariable("BoxStarter:DataDrive", "D", "Process") # for right now
-
-    	[Environment]::SetEnvironmentVariable("BoxStarter:SourceCodeFolder", "git", "Machine") # relative path to for reboots
-	[Environment]::SetEnvironmentVariable("BoxStarter:SourceCodeFolder", "git", "Process") # for right now	
-
+    	[Environment]::SetEnvironmentVariable("BoxStarter:SourceCodeFolder", "VSO", "Machine") # relative path to for reboots
+	[Environment]::SetEnvironmentVariable("BoxStarter:SourceCodeFolder", "VSO", "Process") # for right now
 #START
-	START http://boxstarter.org/package/nr/url?http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/JonCubed/boxstarter/master/box.ps1
-
-wget -Uri 'https://raw.githubusercontent.com/JonCubed/boxstarter/master/bootstrap.ps1' -OutFile "$($env:temp)\bootstrap.ps1";&Invoke-Command -ScriptBlock { &"$($env:temp)\bootstrap.ps1" -InstallDev -SkipWindowsUpdate -SqlServer2014IsoImage 'c:\sql2014\en_sql_server_2014_standard_edition_x64_dvd_3932034.iso' }
+	START http://boxstarter.org/package/nr/url?http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/AddedInnovation/developer-setup/master/windows.ps1
 #>
 
 $Boxstarter.RebootOk = $true
