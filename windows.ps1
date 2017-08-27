@@ -365,10 +365,10 @@ $tempInstallFolder = New-InstallCache -InstallDrive $dataDrive
 Use-Checkpoint -Function ${Function:Set-RegionalSettings} -CheckpointName 'RegionalSettings' -SkipMessage 'Regional settings are already configured'
 
 Write-BoxstarterMessage "Windows update..."
-Install-WindowsUpdate
+#Install-WindowsUpdate
 
 # disable chocolatey default confirmation behaviour (no need for --yes)
-Use-Checkpoint -Function ${Function:Enable-ChocolateyFeatures} -CheckpointName 'IntialiseChocolatey' -SkipMessage 'Chocolatey features already configured'
+Use-Checkpoint -Function ${Function:Enable-ChocolateyFeatures} -CheckpointName 'IntializeChocolatey' -SkipMessage 'Chocolatey features already configured'
 
 Use-Checkpoint -Function ${Function:Set-BaseSettings} -CheckpointName 'BaseSettings' -SkipMessage 'Base settings are already configured'
 Use-Checkpoint -Function ${Function:Set-UserSettings} -CheckpointName 'UserSettings' -SkipMessage 'User settings are already configured'
