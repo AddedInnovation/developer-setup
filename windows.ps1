@@ -174,17 +174,17 @@ function Install-WebPackageWithCheckpoint {
 }
 
 function Install-CoreApps {
-    choco install googlechrome              --limitoutput
-    choco install notepadplusplus.install   --limitoutput    
-    choco install 7zip.install              --limitoutput
-    choco install adobereader               --limitoutput
-    choco install lastpass		    --limitoutput
-    choco install filezilla		    --limitoutput    
-    choco install powershell		    --limitoutput
-    choco install ditto			    --limitoutput
-    choco install greenshot		    --limitoutput
-    choco install openvpn		    --limitoutput
-    choco install dropbox		    --limitoutput
+    choco install googlechrome          --limitoutput
+    choco install notepadplusplus	--limitoutput    
+    choco install 7zip			--limitoutput
+    choco install adobereader           --limitoutput
+    choco install lastpass		--limitoutput
+    choco install filezilla		--limitoutput    
+    choco install powershell		--limitoutput
+    choco install ditto			--limitoutput
+    choco install greenshot		--limitoutput
+    choco install openvpn		--limitoutput
+    choco install dropbox		--limitoutput
     #trend micro TBD
 }
 
