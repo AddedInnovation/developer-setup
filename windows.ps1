@@ -176,8 +176,7 @@ function Install-WebPackageWithCheckpoint {
 function Install-CoreApps {
     choco install googlechrome          --limitoutput
     choco install notepadplusplus	--limitoutput    
-    choco install 7zip			--limitoutput
-    choco install adobereader           --limitoutput
+    choco install 7zip			--limitoutput    
     choco install lastpass		--limitoutput
     choco install filezilla		--limitoutput    
     choco install powershell		--limitoutput
