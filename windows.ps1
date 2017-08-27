@@ -177,9 +177,8 @@ function Install-CoreApps {
     choco install googlechrome          --limitoutput
     choco install notepadplusplus	--limitoutput    
     choco install 7zip			--limitoutput    
-    choco install lastpass		--limitoutput
-    choco install filezilla		--limitoutput    
-    choco install powershell		--limitoutput
+    choco install lastpass		--limitoutput --ignorechecksums
+    choco install filezilla		--limitoutput        
     choco install ditto			--limitoutput
     choco install greenshot		--limitoutput
     #choco install openvpn		--limitoutput
@@ -208,8 +207,7 @@ function Install-CoreDevApps {
     choco install nuget.commandline		--limitoutput        
     choco install nugetpackageexplorer		--limitoutput    
     choco install fiddler4            		--limitoutput
-    choco install postman			--limitoutput
-    choco install powershell   			--limitoutput
+    choco install postman			--limitoutput    
     choco install sql-server-management-studio	--limitoutput
     choco install awscli			--limitoutput
     choco install awstools.powershell		--limitoutput
