@@ -182,7 +182,7 @@ function Install-CoreApps {
     choco install powershell		--limitoutput
     choco install ditto			--limitoutput
     choco install greenshot		--limitoutput
-    choco install openvpn		--limitoutput
+    #choco install openvpn		--limitoutput
     choco install dropbox		--limitoutput
     #trend micro TBD
 }
