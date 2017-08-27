@@ -177,7 +177,7 @@ function Install-CoreApps {
     choco install googlechrome          --limitoutput
     choco install notepadplusplus	--limitoutput    
     choco install 7zip			--limitoutput    
-    choco install lastpass		--limitoutput --ignorechecksums
+    choco install lastpass		--limitoutput --ignorechecksum
     choco install filezilla		--limitoutput        
     choco install ditto			--limitoutput
     choco install greenshot		--limitoutput
