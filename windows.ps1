@@ -208,7 +208,6 @@ function Install-CoreDevApps {
     choco install nugetpackageexplorer		--limitoutput    
     choco install fiddler4            		--limitoutput
     choco install postman			--limitoutput    
-    choco install sql-server-management-studio	--limitoutput
     choco install awscli			--limitoutput
     choco install awstools.powershell		--limitoutput
 }
@@ -415,9 +414,6 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 # reload path environment variable
 Update-Path
-
-# set HOME to user profile for git
-[Environment]::SetEnvironmentVariable("HOME", $env:UserProfile, "User")
 
 # rerun windows update after we have installed everything
 Write-BoxstarterMessage "Windows update..."
