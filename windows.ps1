@@ -186,7 +186,7 @@ function Install-CoreApps {
     #trend micro TBD
 }
 
-function Set-ChocoCoreAppPins {
+function Set-ChocoAppPins {
     # pin apps that update themselves
     choco pin add -n=googlechrome
 }
@@ -400,7 +400,7 @@ Use-Checkpoint -Function ${Function:Install-CoreDevApps} -CheckpointName 'CoreDe
 New-SourceCodeFolder
 
 # pin chocolatey app that self-update
-Use-Checkpoint -Function ${Function:Set-ChocoDevAppPins} -CheckpointName 'ChocoDevAppPins' -SkipMessage 'Dev apps are already pinned'
+Use-Checkpoint -Function ${Function:Set-ChocoAppPins} -CheckpointName 'ChocoAppPins' -SkipMessage 'Apps are already pinned'
 
 Use-Checkpoint -Function ${Function:Set-DevDesktopSettings} -CheckpointName 'DevDesktopSettings' -SkipMessage 'Dev desktop settings are already configured'
 
