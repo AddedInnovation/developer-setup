@@ -269,6 +269,9 @@ function Set-BaseSettings {
     Set-Volume -DriveLetter $sytemDrive -NewFileSystemLabel "OS"
     Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -DisableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
     Set-TaskbarOptions -Combine Never
+    Enable-RemoteDesktop
+    Disable-UAC
+    Disable-InternetExplorerESC
 
     # replace command prompt with powershell in start menu and win+x
     Set-CornerNavigationOptions -EnableUsePowerShellOnWinX
