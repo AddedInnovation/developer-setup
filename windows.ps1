@@ -180,10 +180,11 @@ function Install-CoreApps {
     choco install lastpass		--limitoutput --ignorechecksum
     choco install filezilla		--limitoutput        
     choco install ditto			--limitoutput
-    choco install greenshot		--limitoutput
-    #choco install openvpn		--limitoutput
+    choco install greenshot		--limitoutput    
     choco install dropbox		--limitoutput
+    choco install bluejeansapp		--limitoutput
     #trend micro TBD
+    #choco install openvpn		--limitoutput
 }
 
 function Set-ChocoAppPins {
