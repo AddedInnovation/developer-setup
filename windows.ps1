@@ -184,6 +184,7 @@ function Install-CoreApps {
     choco install dropbox		--limitoutput
     choco install bluejeansapp		--limitoutput
     choco install ccleaner		--limitoutput
+    choco install microsoft-teams	--limitoutput
     #trend micro TBD
     #choco install openvpn		--limitoutput
 }
