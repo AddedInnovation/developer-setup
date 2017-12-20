@@ -375,10 +375,6 @@ Use-Checkpoint -Function ${Function:Set-UserSettings} -CheckpointName 'UserSetti
 Write-BoxstarterMessage "Starting installs"
 
 Use-Checkpoint -Function ${Function:Install-CoreApps} -CheckpointName 'InstallCoreApps' -SkipMessage 'Core apps are already installed'
-
-# pin chocolatey app that self-update
-Use-Checkpoint -Function ${Function:Set-ChocoCoreAppPins} -CheckpointName 'ChocoCoreAppPins' -SkipMessage 'Core apps are already pinned'
-
 Use-Checkpoint -Function ${Function:Set-BaseDesktopSettings} -CheckpointName 'BaseDesktopSettings' -SkipMessage 'Base desktop settings are already configured'
 
 Write-BoxstarterMessage "Installing dev apps"
