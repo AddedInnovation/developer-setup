@@ -181,8 +181,8 @@ function Install-CoreApps {
     choco install filezilla		--limitoutput        
     choco install ditto			--limitoutput    
     choco install microsoft-teams	--limitoutput
-    choco install dropbox		--limitoutput
     choco install greenshot		--limitoutput       
+    #choco install dropbox		--limitoutput    
     #choco install ccleaner		--limitoutput    
 }
 
