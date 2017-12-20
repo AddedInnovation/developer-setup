@@ -179,14 +179,11 @@ function Install-CoreApps {
     choco install 7zip			--limitoutput    
     choco install lastpass		--limitoutput --ignorechecksum
     choco install filezilla		--limitoutput        
-    choco install ditto			--limitoutput
-    choco install ccleaner		--limitoutput
+    choco install ditto			--limitoutput    
     choco install microsoft-teams	--limitoutput
     choco install dropbox		--limitoutput
     choco install greenshot		--limitoutput       
-    #choco install bluejeansapp		--limitoutput
-    #trend micro TBD
-    #choco install openvpn		--limitoutput
+    choco install ccleaner		--limitoutput    
 }
 
 function Set-ChocoAppPins {
