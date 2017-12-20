@@ -183,7 +183,7 @@ function Install-CoreApps {
     choco install microsoft-teams	--limitoutput
     choco install dropbox		--limitoutput
     choco install greenshot		--limitoutput       
-    choco install ccleaner		--limitoutput    
+    #choco install ccleaner		--limitoutput    
 }
 
 function Set-ChocoAppPins {
