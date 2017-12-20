@@ -181,10 +181,11 @@ function Install-CoreApps {
     choco install filezilla		--limitoutput        
     choco install ditto			--limitoutput
     choco install greenshot		--limitoutput    
-    choco install dropbox		--limitoutput
-    choco install bluejeansapp		--limitoutput
     choco install ccleaner		--limitoutput
+    choco install bluejeansapp		--limitoutput
     choco install microsoft-teams	--limitoutput
+    choco install dropbox		--limitoutput
+    
     #trend micro TBD
     #choco install openvpn		--limitoutput
 }
