@@ -182,7 +182,8 @@ function Install-CoreApps {
     choco install filezilla		--limitoutput        
     choco install ditto			--limitoutput    
     choco install microsoft-teams	--limitoutput
-    choco install greenshot		--limitoutput       
+    choco install greenshot		--limitoutput   
+    choco install slack			--limitoutput
     #choco install office365-2016-deployment-tool -packageParameters "/64bit /Shared /LogPath:'C:\logs\'"
     #choco install dropbox		--limitoutput    
     #choco install ccleaner		--limitoutput    
