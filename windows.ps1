@@ -215,6 +215,7 @@ function Install-CoreDevApps {
     choco install awscli			--limitoutput
     choco install awstools.powershell		--limitoutput
     choco install filezilla			--limitoutput
+    choco install dotpeek			--limitoutput
 }
 
 function Install-VisualStudio2017 {
