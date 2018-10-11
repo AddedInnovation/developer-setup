@@ -214,6 +214,7 @@ function Install-CoreDevApps {
     choco install postman			--limitoutput    
     choco install awscli			--limitoutput
     choco install awstools.powershell		--limitoutput
+    choco install filezilla			--limitoutput
 }
 
 function Install-VisualStudio2017 {
