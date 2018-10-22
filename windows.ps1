@@ -318,7 +318,12 @@ function Move-WindowsLibrary {
 }
 
 function New-SourceCodeFolder {
-    $sourceCodeFolder = 'VSO'
+    param(
+        [string]
+        $FolderName
+    )
+    
+    $sourceCodeFolder = $FolderName
     if (Test-Path env:\BoxStarter:SourceCodeFolder) {
         $sourceCodeFolder = $env:BoxStarter:SourceCodeFolder
     }
@@ -403,7 +408,8 @@ Use-Checkpoint -Function ${Function:Install-VisualStudio2017} -CheckpointName 'V
 Use-Checkpoint -Function ${Function:Install-CoreDevApps} -CheckpointName 'CoreDevApps' -SkipMessage 'Core dev apps are already installed'
 
 # make folder for source code
-New-SourceCodeFolder
+New-SourceCodeFolder -FolderName "VSO"
+New-SourceCodeFolder -FolderName "Git"
 
 # pin chocolatey app that self-update
 Use-Checkpoint -Function ${Function:Set-ChocoAppPins} -CheckpointName 'ChocoAppPins' -SkipMessage 'Apps are already pinned'
