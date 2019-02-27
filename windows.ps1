@@ -204,7 +204,7 @@ function Install-CoreDevApps {
     choco install dotnetcore-sdk    		--limitoutput
     choco install nuget.commandline		--limitoutput        
     choco install nugetpackageexplorer		--limitoutput    
-    choco install fiddler4            		--limitoutput
+    choco install fiddler            		--limitoutput
     choco install postman			--limitoutput    
     choco install filezilla			--limitoutput
     choco install dotpeek			--limitoutput
