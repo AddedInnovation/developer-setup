@@ -369,9 +369,6 @@ $tempInstallFolder = New-InstallCache -InstallDrive $dataDrive
 
 Use-Checkpoint -Function ${Function:Set-RegionalSettings} -CheckpointName 'RegionalSettings' -SkipMessage 'Regional settings are already configured'
 
-Write-BoxstarterMessage "Windows update..."
-#Install-WindowsUpdate
-
 # disable chocolatey default confirmation behaviour (no need for --yes)
 Use-Checkpoint -Function ${Function:Enable-ChocolateyFeatures} -CheckpointName 'IntializeChocolatey' -SkipMessage 'Chocolatey features already configured'
 
@@ -420,9 +417,5 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 # reload path environment variable
 Update-Path
-
-# rerun windows update after we have installed everything
-Write-BoxstarterMessage "Windows update..."
-Install-WindowsUpdate
 
 Clear-Checkpoints
