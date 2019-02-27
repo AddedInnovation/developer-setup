@@ -184,10 +184,7 @@ function Install-CoreApps {
     choco install microsoft-teams	--limitoutput
     choco install greenshot		--limitoutput   
     choco install slack			--limitoutput
-    choco install bluejeansapp		--limitoutput
-    #choco install office365-2016-deployment-tool -packageParameters "/64bit /Shared /LogPath:'C:\logs\'"
-    #choco install dropbox		--limitoutput    
-    #choco install ccleaner		--limitoutput    
+    choco install bluejeansapp		--limitoutput    
 }
 
 function Set-ChocoAppPins {
@@ -200,10 +197,7 @@ function Install-SqlTools {
         $DownloadFolder
     )
 
-    choco install sql-server-management-studio --limitoutput
-
-    #Install-WebPackageWithCheckpoint 'SQL Source Control V3.8' 'exe' '/quiet' $DownloadFolder ftp://support.red-gate.com/patches/SQLSourceControlFrequentUpdates/23Jul2015/SQLSourceControlFrequentUpdates_3.8.21.179.exe
-    #Install-WebPackageWithCheckpoint 'SQL Compare V11.6' 'exe' '/quiet' $DownloadFolder http://download.red-gate.com/checkforupdates/SQLCompare/SQLCompare_11.6.11.2463.exe
+    choco install sql-server-management-studio --limitoutput   
 }
 
 function Install-CoreDevApps {
@@ -212,11 +206,11 @@ function Install-CoreDevApps {
     choco install nugetpackageexplorer		--limitoutput    
     choco install fiddler4            		--limitoutput
     choco install postman			--limitoutput    
-    choco install awscli			--limitoutput
-    choco install awstools.powershell		--limitoutput
     choco install filezilla			--limitoutput
     choco install dotpeek			--limitoutput
     choco install soapui			--limitoutput
+    choco install vsts-cli			--limitoutput
+    choco install beyondcompare			--limitoutput
 }
 
 function Install-VisualStudio2017 {
@@ -261,7 +255,7 @@ function Install-InternetInformationServices {
 
     # Security Features
     choco install IIS-BasicAuthentication           --source windowsfeatures --limitoutput
-    choco install IIS-WindowsAuthentication     --source windowsfeatures --limitoutput   
+    choco install IIS-WindowsAuthentication         --source windowsfeatures --limitoutput   
 }
 
 function Set-RegionalSettings {
