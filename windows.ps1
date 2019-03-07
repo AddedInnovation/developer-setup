@@ -221,6 +221,9 @@ function Install-VisualStudio2017 {
     choco install visualstudio2017-workload-netweb			--limitoutput
     choco install visualstudio2017-workload-visualstudioextension	--limitoutput
     choco install visualstudio2017-workload-azure			--limitoutput
+    
+    #install ssdt
+    choco install ssdt17
 }
 
 function Install-InternetInformationServices {
