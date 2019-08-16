@@ -214,7 +214,7 @@ function Install-CoreDevApps {
 }
 
 function Install-VisualStudio2017 {
-    # install visual studio 2017 community and extensions
+    # install visual studio 2017 community and workloads
     choco install visualstudio2017community				--limitoutput	
     choco install visualstudio2017-workload-netcoretools		--limitoutput
     choco install visualstudio2017-workload-manageddesktop		--limitoutput
@@ -224,6 +224,16 @@ function Install-VisualStudio2017 {
     
     #install ssdt
     choco install ssdt17
+}
+
+function Install-VisualStudio2019 {
+    # install visual studio 2019 professional and workloads
+    choco install visualstudio2019professional				--limitoutput	
+    choco install visualstudio2019-workload-netcoretools		--limitoutput
+    choco install visualstudio2019-workload-manageddesktop		--limitoutput
+    choco install visualstudio2019-workload-netweb			--limitoutput
+    choco install visualstudio2019-workload-visualstudioextension	--limitoutput
+    choco install visualstudio2019-workload-azure			--limitoutput   
 }
 
 function Install-InternetInformationServices {
@@ -397,6 +407,9 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 #install vs2017
 Use-Checkpoint -Function ${Function:Install-VisualStudio2017} -CheckpointName 'VisualStudio2017' -SkipMessage 'Visual Studio 2017 is already installed'
+
+#install vs2019
+Use-Checkpoint -Function ${Function:Install-VisualStudio2019} -CheckpointName 'VisualStudio2019' -SkipMessage 'Visual Studio 2019 is already installed'
 
 #install core apps needed for dev
 Use-Checkpoint -Function ${Function:Install-CoreDevApps} -CheckpointName 'CoreDevApps' -SkipMessage 'Core dev apps are already installed'
