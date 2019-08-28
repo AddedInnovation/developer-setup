@@ -6,6 +6,9 @@
 	[Environment]::SetEnvironmentVariable("BoxStarter:SourceCodeFolder", "VSO", "Process") # for right now
 #START
 	START http://boxstarter.org/package/nr/url?http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/AddedInnovation/developer-setup/master/windows.ps1
+	
+	Older version
+	START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/AddedInnovation/developer-setup/fa49b39ccdd5b1b22af891f293af1a90272a11d3/windows.ps1
 #>
 
 $Boxstarter.RebootOk = $true
