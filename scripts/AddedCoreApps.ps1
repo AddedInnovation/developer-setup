@@ -1,5 +1,5 @@
 choco install adobereader     --limitoutput
-choco install googlechrome    --limitoutput
+choco install brave    --limitoutput
 choco install notepadplusplus --limitoutput    
 choco install 7zip			  --limitoutput    
 choco install lastpass		  --limitoutput
