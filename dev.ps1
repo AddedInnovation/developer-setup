@@ -36,7 +36,7 @@ function ExecuteScript {
 #	
 #	Set up Windows
 #
-ExecuteScript "FileExplorerSettings.ps1";
+ExecuteScript "SystemSettings.ps1";
 ExecuteScript "RemoveDefaultApps.ps1";
 
 #
