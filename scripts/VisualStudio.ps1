@@ -12,8 +12,8 @@ choco install visualstudio2019-workload-azure
 #
 #	TODO Add all recommended extensions for VS 2019
 #
-choco install chocolatey-visualstudio.extension
+#choco install chocolatey-visualstudio.extension
 
 Update-SessionEnvironment
 
-Install-ChocolateyVsixPackage "PowerShellTools" https://marketplace.visualstudio.com/_apis/public/gallery/publishers/AdamRDriscoll/vsextensions/PowerShellToolsforVisualStudio2017-18561/4.9.1/vspackage
+#Install-ChocolateyVsixPackage "PowerShellTools" https://marketplace.visualstudio.com/_apis/public/gallery/publishers/AdamRDriscoll/vsextensions/PowerShellToolsforVisualStudio2017-18561/4.9.1/vspackage
