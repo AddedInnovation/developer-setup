@@ -3,11 +3,6 @@ Development environment set-up scripts.
 
 First check to see if Chocolatey is operating: https://status.chocolatey.org/
 
-Next, run this in Powershell
+Next, click this link to install the Developer recipe:
 
-```powershell
-Set-ExecutionPolicy Unrestricted
-
-wget -Uri 'https://raw.githubusercontent.com/AddedInnovation/developer-setup/master/bootstrap.ps1' -OutFile "$($env:temp)\bootstrap.ps1";&Invoke-Command -ScriptBlock { &"$($env:temp)\bootstrap.ps1" -InstallDev -SkipWindowsUpdate }
-
-```
+[Visual Studio 2019 Developer](http://boxstarter.org/package/url?https://raw.githubusercontent.com/AddedInnovation/developer-setup/master/dev.ps1)
