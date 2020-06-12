@@ -47,12 +47,19 @@ ExecuteScript "AddedCoreDev.ps1";
 
 Update-SessionEnvironment
 
-#ExecuteScript "VisualStudio.ps1"
+ExecuteScript "VisualStudio.ps1"
 
-#Update-SessionEnvironment
+Update-SessionEnvironment
 
-#ExecuteScript "IIS.ps1"
+#
+#	Setup IIS
+#
+ExecuteScript "IIS.ps1"
 
+#
+#	Setup SQL Server
+#
+ExecuteScript "SQL.ps1"
 
 #
 #	Resume and Install Updates
