@@ -49,6 +49,8 @@ Update-SessionEnvironment
 
 ExecuteScript "VisualStudio.ps1"
 
+if (Test-PendingReboot) { Invoke-Reboot }
+
 Update-SessionEnvironment
 
 #
@@ -56,11 +58,14 @@ Update-SessionEnvironment
 #
 ExecuteScript "IIS.ps1"
 
+if (Test-PendingReboot) { Invoke-Reboot }
+
 #
 #	Setup SQL Server
 #
 ExecuteScript "SQL.ps1"
 
+if (Test-PendingReboot) { Invoke-Reboot }
 #
 #	Resume and Install Updates
 #
