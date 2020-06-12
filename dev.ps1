@@ -37,7 +37,7 @@ function ExecuteScript {
 #	Set up Windows
 #
 ExecuteScript "SystemSettings.ps1";
-ExecuteScript "RemoveDefaultApps.ps1";
+ExecuteScript "RemoveWindowsApps.ps1";
 
 #
 #	Set up Added Core
