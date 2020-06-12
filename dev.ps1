@@ -10,6 +10,9 @@
 #
 
 Disable-UAC
+$Boxstarter.RebootOk = $true
+$Boxstarter.NoPassword = $false
+$Boxstarter.AutoLogin = $true
 $ConfirmPreference = "None" #ensure installing PowerShell modules don't prompt on needed dependencies
 
 # Get the base URI path from the ScriptToCall value
