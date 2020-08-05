@@ -8,3 +8,4 @@
     choco install soapui			--limitoutput
     choco install vsts-cli			--limitoutput
     choco install beyondcompare		--limitoutput
+    choco install azure-cli         --limitoutput
