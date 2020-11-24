@@ -9,5 +9,6 @@
     choco install vsts-cli			--limitoutput
     choco install beyondcompare		--limitoutput
     choco install azure-cli         --limitoutput
+    choco install git               --limitoutput
     refreshenv
     az extension add --name azure-devops
