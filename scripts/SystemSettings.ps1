@@ -56,7 +56,7 @@ Update-ExecutionPolicy -Policy Unrestricted
 $sytemDrive = Get-SystemDrive
 Set-Volume -DriveLetter $sytemDrive -NewFileSystemLabel "OS"
 
-Set-TaskbarOptions -Combine Never
+#Set-TaskbarOptions -Combine Never
 Enable-RemoteDesktop
 
 Disable-InternetExplorerESC
