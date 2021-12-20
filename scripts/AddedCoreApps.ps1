@@ -8,5 +8,4 @@ choco install ditto			  --limitoutput
 choco install microsoft-teams --limitoutput
 choco install greenshot		  --limitoutput   
 choco install slack			  --limitoutput
-choco install bluejeansapp	  --limitoutput
 choco install sysinternals    --limitoutput
