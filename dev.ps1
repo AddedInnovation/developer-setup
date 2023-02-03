@@ -71,4 +71,4 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #
 Enable-UAC
 Enable-MicrosoftUpdate
-Install-WindowsUpdate -acceptEula
+Install-WindowsUpdate
