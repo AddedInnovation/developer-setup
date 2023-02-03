@@ -6,7 +6,7 @@ choco install visualstudio2022enterprise
 choco install visualstudio2022-workload-manageddesktop	
 choco install visualstudio2022-workload-netweb			
 choco install visualstudio2022-workload-visualstudioextension
-choco install visualstudio20229-workload-azure
+choco install visualstudio2022-workload-azure
 
 Update-SessionEnvironment
 
