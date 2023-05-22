@@ -4,6 +4,7 @@
 #https://chocolatey.org/packages/sql-server-2017
 
 choco install sql-server-management-studio --limitoutput  
+choco install dbforge-sql-cmpl
 
 #
 #	Call choco sql-server-2017 with parameters
