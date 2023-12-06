@@ -1,8 +1,8 @@
 
 #
-#	Visual Studio 2022 Enterprise
+#	Visual Studio 2022
 #
-choco install visualstudio2022enterprise
+choco install visualstudio2022professional
 choco install visualstudio2022-workload-manageddesktop	
 choco install visualstudio2022-workload-netweb			
 choco install visualstudio2022-workload-visualstudioextension
